@@ -30,7 +30,7 @@ export default function LinksPage() {
         </div>
 
         <div className="links-copy">
-          <span>Oiê, eu sou a</span>
+          {/* <span>Oiê, eu sou a</span> */}
           <h1>{doctor.name}</h1>
           <p>{doctor.title}</p>
           <small>

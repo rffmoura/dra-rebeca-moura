@@ -25,11 +25,19 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 8% 12%, oklch(72% 0.095 25 / 22%), transparent 28rem),
+    radial-gradient(
+      circle at 8% 12%,
+      oklch(72% 0.095 25 / 22%),
+      transparent 28rem
+    ),
     linear-gradient(90deg, oklch(22% 0.035 65 / 4%) 1px, transparent 1px),
     linear-gradient(0deg, oklch(22% 0.035 65 / 4%) 1px, transparent 1px),
     var(--cream);
-  background-size: auto, 88px 88px, 88px 88px, auto;
+  background-size:
+    auto,
+    88px 88px,
+    88px 88px,
+    auto;
   color: var(--ink);
   font-family: var(--font-body), sans-serif;
 }
@@ -87,7 +95,9 @@ img {
   font-size: 0.9rem;
   font-weight: 700;
   padding: 10px 14px;
-  transition: background-color 180ms var(--ease-out), transform 160ms var(--ease-out);
+  transition:
+    background-color 180ms var(--ease-out),
+    transform 160ms var(--ease-out);
 }
 
 .nav-links a:active,
@@ -198,7 +208,15 @@ h1 {
 
 .portrait-halo {
   background: var(--olive);
-  clip-path: polygon(12% 18%, 58% 2%, 93% 16%, 97% 64%, 76% 98%, 24% 93%, 2% 58%);
+  clip-path: polygon(
+    12% 18%,
+    58% 2%,
+    93% 16%,
+    97% 64%,
+    76% 98%,
+    24% 93%,
+    2% 58%
+  );
   filter: drop-shadow(0 30px 40px oklch(29% 0.071 55 / 18%));
   inset: 4% 0 2% 8%;
   position: absolute;
@@ -229,7 +247,16 @@ h1 {
 }
 
 .heart {
-  clip-path: polygon(50% 91%, 8% 48%, 14% 18%, 39% 11%, 50% 24%, 61% 11%, 86% 18%, 92% 48%);
+  clip-path: polygon(
+    50% 91%,
+    8% 48%,
+    14% 18%,
+    39% 11%,
+    50% 24%,
+    61% 11%,
+    86% 18%,
+    92% 48%
+  );
   font-size: 2rem;
   height: 74px;
   width: 78px;
@@ -248,7 +275,18 @@ h1 {
 }
 
 .star {
-  clip-path: polygon(50% 0, 61% 34%, 98% 35%, 68% 56%, 79% 91%, 50% 70%, 21% 91%, 32% 56%, 2% 35%, 39% 34%);
+  clip-path: polygon(
+    50% 0,
+    61% 34%,
+    98% 35%,
+    68% 56%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 56%,
+    2% 35%,
+    39% 34%
+  );
   font-size: 2.2rem;
   height: 82px;
   width: 82px;
@@ -513,7 +551,11 @@ h1 {
 .links-page {
   align-items: center;
   background:
-    radial-gradient(circle at 70% 0%, oklch(72% 0.095 25 / 34%), transparent 22rem),
+    radial-gradient(
+      circle at 70% 0%,
+      oklch(72% 0.095 25 / 34%),
+      transparent 22rem
+    ),
     var(--olive);
   display: grid;
   min-height: 100vh;
@@ -548,14 +590,34 @@ h1 {
 
 .links-heart {
   bottom: 28px;
-  clip-path: polygon(50% 91%, 8% 48%, 14% 18%, 39% 11%, 50% 24%, 61% 11%, 86% 18%, 92% 48%);
+  clip-path: polygon(
+    50% 91%,
+    8% 48%,
+    14% 18%,
+    39% 11%,
+    50% 24%,
+    61% 11%,
+    86% 18%,
+    92% 48%
+  );
   height: 68px;
   left: 24px;
   width: 72px;
 }
 
 .links-star {
-  clip-path: polygon(50% 0, 61% 34%, 98% 35%, 68% 56%, 79% 91%, 50% 70%, 21% 91%, 32% 56%, 2% 35%, 39% 34%);
+  clip-path: polygon(
+    50% 0,
+    61% 34%,
+    98% 35%,
+    68% 56%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 56%,
+    2% 35%,
+    39% 34%
+  );
   height: 76px;
   right: 26px;
   top: 24px;
@@ -582,6 +644,7 @@ h1 {
 .links-copy h1 {
   font-size: clamp(5.3rem, 22vw, 8rem);
   margin: 8px 0 10px;
+  line-height: 0.88;
 }
 
 .links-copy p {

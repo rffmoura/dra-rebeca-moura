@@ -4,7 +4,7 @@ export const siteContent = {
     title: "Médica dermatologista",
     crm: "CRM UF 000000",
     rqe: "RQE 000000",
-    portrait: "/rebeca-portrait.svg",
+    portrait: "/rebeca-links.png",
     heroPortrait: "/rebeca-hero.png",
     instagram: "https://instagram.com/",
     whatsapp: "https://wa.me/5500000000000",
