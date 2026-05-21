@@ -18,7 +18,7 @@ function CollageMark({
 }
 
 export default function Home() {
-  const { doctor, hero, about, procedures, testimonials } = siteContent;
+  const { doctor, hero, procedures, testimonials } = siteContent;
 
   return (
     <main className="site-shell">
@@ -69,29 +69,43 @@ export default function Home() {
       </section>
 
       <section id="sobre" className="about-section section-reveal">
-        <div className="section-heading">
+        <div className="about-copy">
           <span className="paper-tag">um pouco sobre mim</span>
-          <h2>Da faculdade ao cuidado diário.</h2>
         </div>
-        <div className="about-collage">
-          {about.map((item, index) => (
-            <article className={`about-note note-${index + 1}`} key={item}>
-              <p>{item}</p>
-            </article>
-          ))}
+        <div className="about-author-collage">
+          <div className="about-photo-sheet">
+            <Image
+              src="/rebeca-full-image.jpg"
+              alt="Dra. Rebeca Moura em consultório segurando um dermatoscópio"
+              width={640}
+              height={760}
+            />
+          </div>
+          <div className="about-letter">
+            <p>
+              Me apaixonei pela dermatologia no final da faculdade e hoje
+              transformo essa paixão em cuidado diário para meus pacientes.
+              Gosto de olhar cada pele com calma, escuta e estudo, unindo
+              ciência, atualização e uma rotina possível para cada pessoa.
+            </p>
+          </div>
+          <span className="paperclip" aria-hidden="true" />
+          <CollageMark className="heart about-heart">♥</CollageMark>
           <CollageMark className="star star-two">✷</CollageMark>
-          <CollageMark className="doodle-arrow">↘</CollageMark>
+        </div>
+        <div className="about-details">
+          <ul>
+            <li>Médica pela Faculdade de Medicina de Campos.</li>
+            <li>Dermatologista pelo Hospital Escola Álvaro Alvim.</li>
+            <li>Estudo constante para unir ciência, atualização e cuidado.</li>
+          </ul>
         </div>
       </section>
 
       <section id="atendimentos" className="procedures-section section-reveal">
         <div className="section-heading wide">
           <span className="paper-tag dark-tag">atendimentos</span>
-          <h2>Dermatologia com plano, conversa e acompanhamento.</h2>
-          <p>
-            A lista abaixo é editável. Antes da publicação, substitua pelos
-            procedimentos reais oferecidos pela médica.
-          </p>
+          <h2>Dermatologia com planejamento, conversa e acompanhamento.</h2>
         </div>
         <div className="procedure-grid">
           {procedures.map((procedure, index) => (
