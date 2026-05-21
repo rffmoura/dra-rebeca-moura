@@ -191,24 +191,26 @@ h1 {
 }
 
 .hero-art {
-  aspect-ratio: 0.86;
-  min-height: 520px;
+  aspect-ratio: 0.78;
+  min-height: 560px;
   position: relative;
 }
 
 .portrait-halo {
   background: var(--olive);
-  clip-path: polygon(16% 12%, 61% 1%, 91% 18%, 96% 59%, 75% 96%, 25% 91%, 3% 56%);
+  clip-path: polygon(12% 18%, 58% 2%, 93% 16%, 97% 64%, 76% 98%, 24% 93%, 2% 58%);
   filter: drop-shadow(0 30px 40px oklch(29% 0.071 55 / 18%));
-  inset: 5% 2% 3% 8%;
+  inset: 4% 0 2% 8%;
   position: absolute;
 }
 
 .portrait {
   filter: drop-shadow(0 28px 30px oklch(29% 0.071 55 / 22%));
-  height: 100%;
+  height: 104%;
   object-fit: contain;
+  object-position: center bottom;
   position: relative;
+  transform: translateY(1%);
   width: 100%;
   z-index: 2;
 }
@@ -681,7 +683,7 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   }
 
   .hero-art {
-    min-height: 430px;
+    min-height: 500px;
   }
 
   .procedure-grid,
@@ -728,7 +730,7 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   }
 
   .hero-art {
-    min-height: 390px;
+    min-height: 430px;
   }
 
   .spark {

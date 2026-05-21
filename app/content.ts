@@ -5,6 +5,7 @@ export const siteContent = {
     crm: "CRM UF 000000",
     rqe: "RQE 000000",
     portrait: "/rebeca-portrait.svg",
+    heroPortrait: "/rebeca-hero.png",
     instagram: "https://instagram.com/",
     whatsapp: "https://wa.me/5500000000000",
     location: "https://maps.google.com/",

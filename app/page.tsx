@@ -51,10 +51,10 @@ export default function Home() {
           <div className="portrait-halo" />
           <Image
             className="portrait"
-            src={doctor.portrait}
-            alt="Retrato provisório da Dra. Rebeca Moura"
-            width={760}
-            height={920}
+            src={doctor.heroPortrait}
+            alt="Dra. Rebeca Moura segurando um dermatoscópio"
+            width={1124}
+            height={1700}
             priority
           />
           <CollageMark className="heart heart-one">♥</CollageMark>
