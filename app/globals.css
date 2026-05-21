@@ -780,18 +780,37 @@ h1 {
 }
 
 .links-photo-wrap {
-  background: var(--olive);
+  background:
+    linear-gradient(90deg, oklch(29% 0.071 55 / 5%) 1px, transparent 1px),
+    linear-gradient(0deg, oklch(29% 0.071 55 / 5%) 1px, transparent 1px),
+    var(--paper);
+  background-size: 44px 44px;
+  border: 1px dashed oklch(29% 0.071 55 / 22%);
   min-height: 360px;
   overflow: hidden;
   position: relative;
 }
 
+.links-photo-wrap::before {
+  background: var(--olive);
+  clip-path: polygon(12% 14%, 88% 7%, 96% 80%, 50% 96%, 4% 80%);
+  content: "";
+  inset: 38px 34px 0;
+  opacity: 0.92;
+  position: absolute;
+  transform: rotate(-2deg);
+  z-index: 0;
+}
+
 .links-photo {
+  filter: drop-shadow(0 18px 24px oklch(29% 0.071 55 / 18%));
   height: 380px;
   margin: 0 auto;
   object-fit: contain;
   padding-top: 12px;
+  position: relative;
   width: 100%;
+  z-index: 2;
 }
 
 .links-heart {
@@ -812,6 +831,7 @@ h1 {
 }
 
 .links-star {
+  background: var(--cream);
   clip-path: polygon(
     50% 0,
     61% 34%,
@@ -824,6 +844,10 @@ h1 {
     2% 35%,
     39% 34%
   );
+  color: var(--cocoa);
+  filter:
+    drop-shadow(0 8px 0 oklch(29% 0.071 55 / 22%))
+    drop-shadow(0 0 0 var(--olive));
   height: 76px;
   right: 26px;
   top: 24px;
