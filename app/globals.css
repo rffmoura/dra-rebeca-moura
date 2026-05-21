@@ -137,6 +137,7 @@ img {
 
 .tilted-left {
   transform: rotate(-7deg);
+  margin-bottom: 10px;
 }
 
 h1,
@@ -330,6 +331,12 @@ h1 {
   padding: clamp(72px, 10vw, 128px) clamp(22px, 6vw, 86px);
 }
 
+.testimonials-section {
+  overflow: visible;
+  position: relative;
+  z-index: 4;
+}
+
 .section-heading {
   max-width: 760px;
 }
@@ -498,23 +505,107 @@ h1 {
 }
 
 .testimonial {
+  min-height: 265px;
+  position: relative;
+}
+
+.testimonial-surface {
   background: var(--paper);
   border: 1px dashed oklch(29% 0.071 55 / 32%);
   color: var(--cocoa);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 26px;
+  position: relative;
+  transition:
+    box-shadow 220ms var(--ease-out),
+    transform 220ms var(--ease-out);
 }
 
-.testimonial p {
+.testimonial[data-expanded="true"] .testimonial-surface {
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 28px 80px oklch(29% 0.071 55 / 24%);
+  top: 0;
+  z-index: 12;
+}
+
+.testimonial[data-expanded="true"] {
+  z-index: 20;
+}
+
+.testimonial[data-state="open"] .testimonial-surface {
+  animation: testimonial-pop-in 260ms var(--ease-out) both;
+}
+
+.testimonial[data-state="closing"] .testimonial-surface {
+  animation: testimonial-pop-out 180ms var(--ease-out) both;
+}
+
+.testimonial-backdrop {
+  animation: testimonial-backdrop-in 220ms var(--ease-out) both;
+  background: oklch(21% 0.036 67 / 18%);
+  border: 0;
+  cursor: pointer;
+  inset: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.testimonial[data-state="closing"] .testimonial-backdrop {
+  animation: testimonial-backdrop-out 180ms var(--ease-out) both;
+}
+
+.testimonial-quote {
   font-family: var(--font-display), serif;
-  font-size: 2.1rem;
+  font-size: clamp(1.65rem, 2vw, 2.1rem);
   font-weight: 700;
   line-height: 1.05;
+}
+
+.testimonial[data-expanded="true"] .testimonial-quote {
+  font-size: clamp(1.25rem, 1.55vw, 1.55rem);
+  line-height: 1.23;
+}
+
+.testimonial-quote.is-clamped {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.testimonial-toggle {
+  align-self: flex-start;
+  background: var(--cocoa);
+  border: 0;
+  color: var(--white-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-top: 18px;
+  padding: 10px 13px;
+  position: relative;
+  z-index: 1;
+  transition:
+    background-color 180ms var(--ease-out),
+    transform 160ms var(--ease-out);
+}
+
+.testimonial-toggle:active {
+  transform: scale(0.97);
 }
 
 .testimonial span {
   display: block;
   font-weight: 800;
-  margin-top: 28px;
+  margin-top: auto;
+  padding-top: 28px;
 }
 
 .testimonial small {
@@ -529,6 +620,8 @@ h1 {
   display: grid;
   gap: 36px;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+  position: relative;
+  z-index: 1;
 }
 
 .contact-card {
@@ -715,6 +808,46 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   }
 }
 
+@keyframes testimonial-pop-in {
+  from {
+    opacity: 0.72;
+    transform: translateY(8px) rotate(0deg) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-10px) rotate(-0.7deg) scale(1.03);
+  }
+}
+
+@keyframes testimonial-pop-out {
+  from {
+    opacity: 1;
+    transform: translateY(-10px) rotate(-0.7deg) scale(1.03);
+  }
+  to {
+    opacity: 0.72;
+    transform: translateY(6px) rotate(0deg) scale(0.98);
+  }
+}
+
+@keyframes testimonial-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes testimonial-backdrop-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .nav-links a:hover {
     background: var(--paper);
@@ -733,6 +866,19 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   .procedure-card:hover {
     box-shadow: 0 30px 0 oklch(29% 0.071 55 / 14%);
     transform: translateY(-8px) rotate(-1deg);
+  }
+
+  .testimonial[data-expanded="false"]:hover {
+    z-index: 2;
+  }
+
+  .testimonial[data-expanded="false"]:hover .testimonial-surface {
+    box-shadow: 0 18px 40px oklch(29% 0.071 55 / 10%);
+    transform: translateY(-4px) rotate(-0.5deg);
+  }
+
+  .testimonial-toggle:hover {
+    background: var(--olive-dark);
   }
 }
 

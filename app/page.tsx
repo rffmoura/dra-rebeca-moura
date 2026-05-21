@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteContent } from "./content";
+import { TestimonialCard } from "./testimonial-card";
 
 function CollageMark({
   className,
@@ -110,11 +111,12 @@ export default function Home() {
         </div>
         <div className="testimonial-track">
           {testimonials.map((testimonial, index) => (
-            <article className="testimonial" key={`${testimonial.note}-${index}`}>
-              <p>“{testimonial.quote}”</p>
-              <span>{testimonial.name}</span>
-              <small>{testimonial.note}</small>
-            </article>
+            <TestimonialCard
+              key={`${testimonial.name}-${index}`}
+              name={testimonial.name}
+              note={testimonial.note}
+              quote={testimonial.quote}
+            />
           ))}
         </div>
       </section>

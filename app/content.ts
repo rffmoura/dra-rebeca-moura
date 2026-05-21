@@ -23,7 +23,7 @@ export const siteContent = {
     "Me apaixonei pela dermatologia no final da faculdade.",
     "Hoje transformo essa paixão em cuidado diário para meus pacientes.",
     "Sou médica pela Faculdade de Medicina de Campos e dermatologista pelo Hospital Escola Álvaro Alvim.",
-    "Amo papelaria, carrego minha agenda para todos os lugares e acredito que cuidado bom também precisa de organização, delicadeza e presença.",
+    "Apaixonada pela dermatologia clínica e tratamento de doenças de pele, cabelos e unhas, buscando aliar conhecimento científico e cuidado integral ao paciente.",
   ],
   procedures: [
     {
@@ -45,17 +45,17 @@ export const siteContent = {
   ],
   testimonials: [
     {
-      quote: "Depoimento real de paciente a inserir.",
+      quote: "O atendimento com a Dra. Rebeca se deu de uma forma muito leve e profissional. Me apresentou o diagnóstico de forma clara após observar com cuidado as marcas na minha pele. Explicou a utilização dos medicamentos e produtos e depois escreveu tudo de forma legível para que eu me recordasse depois. Super recomendo",
+      name: "Luisa Nunes",
+      note: "@lubsnunes",
+    },
+    {
+      quote: "O atendimento com a Dra. Rebeca se deu de uma forma muito leve e profissional. Me apresentou o diagnóstico de forma clara após observar com cuidado as marcas na minha pele. Explicou a utilização dos medicamentos e produtos e depois escreveu tudo de forma legível para que eu me recordasse depois. Super recomendo",
       name: "Paciente",
       note: "Texto pendente de autorização e revisão.",
     },
     {
-      quote: "Depoimento real de paciente a inserir.",
-      name: "Paciente",
-      note: "Texto pendente de autorização e revisão.",
-    },
-    {
-      quote: "Depoimento real de paciente a inserir.",
+      quote: "O atendimento com a Dra. Rebeca se deu de uma forma muito leve e profissional. Me apresentou o diagnóstico de forma clara após observar com cuidado as marcas na minha pele. Explicou a utilização dos medicamentos e produtos e depois escreveu tudo de forma legível para que eu me recordasse depois. Super recomendo",
       name: "Paciente",
       note: "Texto pendente de autorização e revisão.",
     },
