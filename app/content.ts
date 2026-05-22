@@ -59,6 +59,11 @@ export const siteContent = {
       name: "Fernando Borges",
       note: "@ferborges",
     },
+    {
+      quote: "Pra mim o grande diferencial da Dra Rebeca foi a atenção que ela tem, a vontade de ver o paciente melhor. Ela é honesta com os processos que serão necessários e para que o paciente entenda o seu problema de pele. Indico sempre e confio de olhos fechados!",
+      name: "Patricia Crespo",
+      note: "@patriicia_crespo",
+    },
   ],
   links: [
     { label: "Agendar pelo WhatsApp", href: "https://wa.me/5522998538561" },
