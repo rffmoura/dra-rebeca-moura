@@ -61,9 +61,9 @@ export const siteContent = {
     },
   ],
   links: [
-    { label: "Agendar pelo WhatsApp", href: "https://wa.me/5500000000000" },
+    { label: "Agendar pelo WhatsApp", href: "https://wa.me/5522998538561" },
     { label: "Conhecer o site", href: "/" },
-    { label: "Instagram", href: "https://instagram.com/" },
+    { label: "Instagram", href: "https://instagram.com/rebecagomesbm" },
     // { label: "Localização", href: "https://maps.google.com/" },
   ],
 };
