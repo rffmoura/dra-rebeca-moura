@@ -1,8 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export function ScrollChoreography() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const root = document.documentElement;
     const sections = Array.from(document.querySelectorAll<HTMLElement>(".section-reveal"));
@@ -27,9 +30,8 @@ export function ScrollChoreography() {
 
     return () => {
       observer.disconnect();
-      delete root.dataset.motionReady;
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }

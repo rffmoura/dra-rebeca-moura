@@ -15,7 +15,7 @@ export const siteContent = {
     kicker: "Oiê, eu sou a",
     headline: "Rebeca,",
     line:
-      "dermatologia com cuidado diário, escuta atenta e uma rotina pensada para a pele que você vive todos os dias.",
+      "dermatologista que acredita em cuidado diário e rotinas pensadas para a pele real de cada paciente.",
     cta: "Agendar pelo WhatsApp",
     secondary: "Conhecer atendimentos",
   },
