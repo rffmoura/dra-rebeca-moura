@@ -793,6 +793,8 @@ h1 {
   font-weight: 800;
   margin-top: auto;
   padding-top: 28px;
+  text-decoration: none;
+  word-break: keep-all;
 }
 
 .testimonial small,
@@ -800,6 +802,15 @@ h1 {
   color: oklch(29% 0.071 55 / 62%);
   display: block;
   margin-top: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.testimonial a[x-apple-data-detectors],
+.testimonial-modal a[x-apple-data-detectors] {
+  color: inherit !important;
+  font: inherit !important;
+  text-decoration: none !important;
 }
 
 .contact-section {
@@ -1130,6 +1141,7 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   .about-details {
     grid-column: 1;
     grid-row: auto;
+    margin-top: clamp(54px, 7vw, 82px);
     max-width: 720px;
   }
 
@@ -1274,6 +1286,10 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   .about-details ul {
     gap: 18px;
     margin-top: 42px;
+  }
+
+  .about-details {
+    margin-top: 0;
   }
 
   .about-details li {

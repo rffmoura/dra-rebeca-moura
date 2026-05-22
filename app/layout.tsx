@@ -21,6 +21,12 @@ export const metadata: Metadata = {
   title: "Dra. Rebeca Moura | Dermatologia",
   description:
     "Dermatologia com escuta, cuidado e planejamento individualizado. Atendimentos dermatológicos com a Dra. Rebeca Moura.",
+  formatDetection: {
+    address: false,
+    date: false,
+    email: false,
+    telephone: false,
+  },
   openGraph: {
     title: "Dra. Rebeca Moura | Dermatologia",
     description:
