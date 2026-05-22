@@ -361,6 +361,7 @@ h1 {
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 680px;
+  margin-top: 10px;
 }
 
 .about-section {
@@ -470,7 +471,7 @@ h1 {
 .about-details li {
   color: var(--cocoa);
   font-family: var(--font-display), serif;
-  font-size: clamp(2.25rem, 3.45vw, 3.8rem);
+  font-size: clamp(2rem, 3.25vw, 3rem);
   font-weight: 800;
   line-height: 0.98;
   padding-left: 64px;
@@ -845,8 +846,7 @@ h1 {
     39% 34%
   );
   color: var(--cocoa);
-  filter:
-    drop-shadow(0 8px 0 oklch(29% 0.071 55 / 22%))
+  filter: drop-shadow(0 8px 0 oklch(29% 0.071 55 / 22%))
     drop-shadow(0 0 0 var(--olive));
   height: 76px;
   right: 26px;
@@ -1058,7 +1058,7 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   }
 
   .about-details li {
-    font-size: clamp(1.9rem, 5.6vw, 3rem);
+    font-size: clamp(1.65rem, 4.6vw, 2.65rem);
     padding-left: 48px;
   }
 
@@ -1133,6 +1133,13 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
     top: 72%;
   }
 
+  @media (max-width: 680px) {
+    .paper-strip {
+      top: 84%;
+      right: 6%;
+    }
+  }
+
   .about-section,
   .procedures-section,
   .testimonials-section,
@@ -1154,6 +1161,12 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
 
   .procedures-section .section-heading p {
     font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .testimonials-section .section-heading h2 {
+    font-size: clamp(3rem, 14vw, 4.45rem);
+    line-height: 0.96;
     max-width: 100%;
   }
 
@@ -1188,7 +1201,7 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
   }
 
   .about-details li {
-    font-size: clamp(1.45rem, 8vw, 2.05rem);
+    font-size: 1.5rem;
     line-height: 1.04;
     padding-left: 34px;
   }

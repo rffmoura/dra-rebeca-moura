@@ -61,9 +61,8 @@ export default function Home() {
           <CollageMark className="heart heart-one">♥</CollageMark>
           <CollageMark className="heart heart-two">♥</CollageMark>
           <CollageMark className="star star-one">✶</CollageMark>
-          <CollageMark className="spark spark-one">⌁</CollageMark>
           <div className="hero-note paper-strip">
-            cuidado que combina ciência, rotina e presença
+            cuidado que combina ciência, estudo e escuta
           </div>
         </div>
       </section>
@@ -95,8 +94,8 @@ export default function Home() {
         </div>
         <div className="about-details">
           <ul>
-            <li>Médica pela Faculdade de Medicina de Campos.</li>
             <li>Dermatologista pelo Hospital Escola Álvaro Alvim.</li>
+            <li>Médica pela Faculdade de Medicina de Campos.</li>
             <li>Estudo constante para unir ciência, atualização e cuidado.</li>
           </ul>
         </div>
@@ -140,8 +139,7 @@ export default function Home() {
           <span className="paper-tag dark-tag">contato</span>
           <h2>Vamos cuidar da sua pele com calma?</h2>
           <p>
-            Agende uma conversa pelo WhatsApp ou salve os links principais para
-            acessar depois pelo Instagram.
+            Agende sua consulta e acompanhe pelas redes sociais conteúdos pensados para orientar e cuidar de você.
           </p>
         </div>
         <div className="contact-card">
