@@ -15,7 +15,7 @@ import {
 } from "./testimonial-card";
 
 const CARD_GAP = 18;
-const MODAL_CLOSE_MS = 180;
+const MODAL_CLOSE_MS = 240;
 
 function getVisibleCount() {
   if (window.innerWidth <= 680) {

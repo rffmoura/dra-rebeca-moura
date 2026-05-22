@@ -745,19 +745,20 @@ h1 {
 }
 
 .testimonial-modal-root[data-state="closing"] .testimonial-backdrop {
-  animation: testimonial-backdrop-out 180ms var(--ease-out) both;
+  animation: testimonial-backdrop-out 240ms var(--ease-out) both;
 }
 
 .testimonial-modal {
-  animation: testimonial-pop-in 260ms var(--ease-out) both;
+  animation: testimonial-pop-in 280ms var(--ease-out) both;
   max-width: min(720px, calc(100vw - 36px));
   position: relative;
+  transform-origin: center;
   width: 100%;
   z-index: 11;
 }
 
 .testimonial-modal-root[data-state="closing"] .testimonial-modal {
-  animation: testimonial-pop-out 180ms var(--ease-out) both;
+  animation: testimonial-pop-out 240ms var(--ease-out) both;
 }
 
 .testimonial-modal .testimonial-surface {
@@ -1033,23 +1034,27 @@ html[data-motion-ready="true"] .section-reveal[data-visible="true"] {
 
 @keyframes testimonial-pop-in {
   from {
-    opacity: 0.72;
-    transform: translateY(8px) rotate(0deg) scale(0.98);
+    filter: blur(1.5px);
+    opacity: 0;
+    transform: translateY(14px) rotate(0.4deg) scale(0.975);
   }
   to {
+    filter: blur(0);
     opacity: 1;
-    transform: translateY(-10px) rotate(-0.7deg) scale(1.03);
+    transform: translateY(0) rotate(-0.7deg) scale(1);
   }
 }
 
 @keyframes testimonial-pop-out {
   from {
+    filter: blur(0);
     opacity: 1;
-    transform: translateY(-10px) rotate(-0.7deg) scale(1.03);
+    transform: translateY(0) rotate(-0.7deg) scale(1);
   }
   to {
-    opacity: 0.72;
-    transform: translateY(6px) rotate(0deg) scale(0.98);
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateY(12px) rotate(-0.2deg) scale(0.975);
   }
 }
 
