@@ -50,14 +50,14 @@ export const siteContent = {
       note: "@lubsnunes",
     },
     {
-      quote: "O atendimento com a Dra. Rebeca se deu de uma forma muito leve e profissional. Me apresentou o diagnóstico de forma clara após observar com cuidado as marcas na minha pele. Explicou a utilização dos medicamentos e produtos e depois escreveu tudo de forma legível para que eu me recordasse depois. Super recomendo",
-      name: "Paciente",
-      note: "Texto pendente de autorização e revisão.",
+      quote: "A Dra. Rebeca Moura é muito atenciosa, explica tudo com clareza e calma, tira todas as dúvidas, o atendimento super humanizado e me passou segurança desde a primeira consulta. Com certeza encontrei uma dermatologista de confiança. Eu recomendo!",
+      name: "Cintia Willemam",
+      note: "@cintia.willemam",
     },
     {
-      quote: "O atendimento com a Dra. Rebeca se deu de uma forma muito leve e profissional. Me apresentou o diagnóstico de forma clara após observar com cuidado as marcas na minha pele. Explicou a utilização dos medicamentos e produtos e depois escreveu tudo de forma legível para que eu me recordasse depois. Super recomendo",
-      name: "Paciente",
-      note: "Texto pendente de autorização e revisão.",
+      quote: "Tenho iniciado meu tratamento de psoríase com a Dra. Rebeca Moura e tenho me sentido muito amparado em todas as etapas do processo. As consultas são sempre muito bem aproveitadas, com uma escuta ativa, atenciosa e cuidadosa, além de orientações claras sobre os melhores hábitos e cuidados para o tratamento. Também percebo uma preocupação genuína com todo o contexto do paciente, não apenas com os sintomas em si. Isso faz toda diferença no acolhimento e na confiança durante o tratamento.",
+      name: "Fernando Borges",
+      note: "@ferborges",
     },
   ],
   links: [
