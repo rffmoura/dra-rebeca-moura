@@ -36,6 +36,7 @@ export default function LinksPage() {
           <small>
             {doctor.crm} · {doctor.rqe}
           </small>
+          <strong className="links-service-mode">Atendimento presencial e online</strong>
         </div>
 
         <div className="links-list">

@@ -9,7 +9,6 @@ export const siteContent = {
     instagram: "https://instagram.com/rebecagomesbm",
     whatsapp: "https://wa.me/5522998538561",
     location: "https://maps.google.com/",
-    address: "Endereço do consultório a inserir",
   },
   hero: {
     kicker: "Oiê, eu sou a",
@@ -28,15 +27,15 @@ export const siteContent = {
   procedures: [
     {
       title: "Consulta dermatológica",
-      text: "Avaliação cuidadosa da pele, histórico, rotina e objetivos para construir um plano individualizado.",
+      text: "Diagnóstico e manejo de dermatoses inflamatórias, infecciosas e autoimune com avaliação cuidadosa da pele para construir um plano individualizado.",
     },
     {
-      title: "Dermatologia clínica",
-      text: "Acompanhamento de queixas, prevenção, tratamento e orientação para saúde da pele.",
+      title: "Atendimento online",
+      text: "Consulta dermatológica à distância, com escuta cuidadosa, orientação segura e plano possível para a sua rotina.",
     },
     {
       title: "Procedimentos dermatológicos",
-      text: "Espaço preparado para listar os procedimentos reais, com descrição ética e sem promessa de resultado.",
+      text: "Realização de procedimentos ambulatoriais, incluindo biópsias cutâneas, crioterapia e eletrocauterização.",
     },
     {
       title: "Rotina de skincare",

@@ -141,8 +141,6 @@ export default function Home() {
             Abrir página de links
           </Link>
           <p>
-            {doctor.address}
-            <br />
             {doctor.crm} · {doctor.rqe}
           </p>
         </div>
