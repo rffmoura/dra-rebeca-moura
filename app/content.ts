@@ -5,7 +5,7 @@ export const siteContent = {
     crm: "CRM RJ 52123190-1",
     rqe: "RQE 59842",
     portrait: "/rebeca-links.png",
-    heroPortrait: "/rebeca-hero.png",
+    heroPortrait: "/rebeca-hero-w-bg.png",
     instagram: "https://instagram.com/rebecagomesbm",
     whatsapp: "https://wa.me/5522998538561",
     location: "https://maps.google.com/",

@@ -49,13 +49,12 @@ export default function Home() {
         </div>
 
         <div className="hero-art" aria-label="Retrato em collage da Dra. Rebeca Moura">
-          <div className="portrait-halo" />
           <Image
             className="portrait"
             src={doctor.heroPortrait}
             alt="Dra. Rebeca Moura segurando um dermatoscópio"
-            width={1124}
-            height={1700}
+            width={1414}
+            height={2000}
             priority
           />
           <CollageMark className="heart heart-one">♥</CollageMark>
